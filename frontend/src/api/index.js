@@ -1,8 +1,7 @@
-// frontend/src/api/index.js
 import Vue from 'vue'
-import Axios from 'axios'
+import axios from 'axios'
 
-const axiosInstance = Axios.create({
+const axiosInstance = axios.create({
     withCredentials: true
 })
 
@@ -25,4 +24,4 @@ axiosInstance.interceptors.response.use(
 
 Vue.prototype.axios = axiosInstance
 
-export default axiosInstance
+export default axiosInstance;
