@@ -7,9 +7,9 @@ from walls import views
 router = DefaultRouter()
 router.register('user/register', views.UserRegisterView)
 router.register('user/login', views.UserLoginView)
-router.register('post/{post_id}', views.PostsViewSet)
-router.register('post/{post_id}', views.PostsViewSet)
-router.register('comment/', views.CommentsViewSet)
+router.register('post/{post_id}', views.PostsView)
+router.register('post/{post_id}', views.PostsView)
+router.register('comment/', views.CommentsView)
 
 urlpatterns = router.urls
 '''[
